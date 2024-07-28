@@ -20,7 +20,7 @@ public class Main {
             for(int j = 0; j < i+1; j++) {
                 System.out.print(" ");
             }
-            for(int j = n-(2*i); j > 0; j--) {
+            for(int j = (2*n)-(2*i)-3; j > 0; j--) {
                 System.out.print("*");
             }
             System.out.println();
