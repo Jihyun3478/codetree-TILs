@@ -12,14 +12,11 @@ public class Main {
                 System.out.print("  ");
             }
             for(int j = loop; j > 0; j--) {
-                if(cnt < 10) {
-                    System.out.print(cnt + " ");
-                    cnt++;
+                System.out.print(cnt + " ");
+                cnt++;
+                if(cnt > 9) {
+                    cnt = 1;
                 }
-            }
-
-            if(cnt > 9) {
-                cnt = 1;
             }
             System.out.println();
             loop--;
