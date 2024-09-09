@@ -12,6 +12,9 @@ public class Main {
                 index = i;
                 break;
             }
+            else {
+                continue;
+            }
         }
 
         for(int i = index-1; i >= 0; i--) {
