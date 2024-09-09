@@ -22,7 +22,7 @@ public class Main {
             sum += n[i];
         }
         System.out.print(sum + " ");
-        avg = sum / index;
+        avg = sum / (double)index;
         System.out.printf("%.1f", avg);
     }
 }
