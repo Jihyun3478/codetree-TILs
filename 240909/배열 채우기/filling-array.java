@@ -10,6 +10,7 @@ public class Main {
             n[i] = sc.nextInt();
             if(n[i] == 0) {
                 index = i;
+                break;
             } else {
                 index = 10;
             }
