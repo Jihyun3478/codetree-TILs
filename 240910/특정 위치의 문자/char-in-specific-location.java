@@ -6,15 +6,20 @@ public class Main {
 
         char[] letters = {'L', 'E', 'B', 'R', 'O', 'S'};
         char letter = sc.next().charAt(0);
+        boolean isInclude = true;
 
         for(int i = 0; i < letters.length; i++) {
             if(letters[i] == letter) {
                 System.out.print(i);
                 break;
             } else if(letters[i] != letter) {
-                System.out.print("None");
+                isInclude = false;
                 break;
             }
+        }
+
+        if(isInclude == false) {
+            System.out.print("None");
         }
     }
 }
