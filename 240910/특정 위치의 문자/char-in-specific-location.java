@@ -6,14 +6,12 @@ public class Main {
 
         char[] letters = {'L', 'E', 'B', 'R', 'O', 'S'};
         char letter = sc.next().charAt(0);
-        boolean isInclude = true;
+        boolean isInclude = false;
 
         for(int i = 0; i < letters.length; i++) {
             if(letters[i] == letter) {
+                isInclude = true;
                 System.out.print(i);
-                break;
-            } else if(letters[i] != letter) {
-                isInclude = false;
                 break;
             }
         }
