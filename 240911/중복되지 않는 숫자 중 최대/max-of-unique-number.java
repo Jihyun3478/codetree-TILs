@@ -24,6 +24,9 @@ public class Main {
             if(cnt[i] == 1) {
                 System.out.print(i);
                 break;
+            } else {
+                System.out.print("-1");
+                break;
             }
         }
     }
