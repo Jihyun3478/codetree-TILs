@@ -21,7 +21,9 @@ public class Main {
         for(int i = 0; i < index; i++) {
             if(numbers[i] > max) {
                 max = numbers[i];
-            } else if(numbers[i] < min) {
+            }
+            
+            if(numbers[i] < min) {
                 min = numbers[i];
             }
         }
