@@ -58,5 +58,6 @@ public class Main {
         for(int i = s-1; i < e; i++) {
             System.out.print(numbers[i] + " ");
         }
+        System.out.println();
     }
 }
