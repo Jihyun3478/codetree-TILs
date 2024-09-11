@@ -5,8 +5,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int[] numbers = new int[n];
-        int[] cnt = new int[n+1];
+        int[] numbers = new int[1000];
+        int[] cnt = new int[1000+1];
 
         for(int i = 0; i < n; i++) {
             numbers[i] = sc.nextInt();
@@ -14,7 +14,7 @@ public class Main {
         }
         
         int max = -1;    
-        for(int i = 0; i < n+1; i++) {
+        for(int i = 0; i < 1000+1; i++) {
             if(cnt[i] == 1) {
                 if(i > max) {
                     max = i;
