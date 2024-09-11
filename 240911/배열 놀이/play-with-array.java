@@ -12,7 +12,7 @@ public class Main {
             numbers[i] = sc.nextInt();
         }
 
-        int[] question = new int[3];
+        int[] question = new int[q];
         for(int i = 0; i < q; i++) {
             question[i] = sc.nextInt();
 
