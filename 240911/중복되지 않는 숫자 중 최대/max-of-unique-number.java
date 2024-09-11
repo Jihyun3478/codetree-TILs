@@ -6,28 +6,23 @@ public class Main {
 
         int n = sc.nextInt();
         int[] numbers = new int[n];
+        int[] cnt = new int[n+1];
 
         for(int i = 0; i < n; i++) {
             numbers[i] = sc.nextInt();
+            cnt[numbers[i]]++;
         }
         
-        int[] cnt = new int[n];
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < n; j++) {
-                if(numbers[j] == numbers[i]) {
-                    cnt[numbers[j]]++;
-                }
-            }
-        }
-        
-        for(int i = cnt.length-1; i >= 0; i--) {
+        int max = -1;    
+        for(int i = 0; i < n+1; i++) {
             if(cnt[i] == 1) {
-                System.out.print(i);
-                break;
-            } else {
-                System.out.print("-1");
-                break;
+                if(i > max) {
+                    max = i;
+                }
+            } else if(cnt[i] != 1) {
+                continue;
             }
         }
+        System.out.print(max);
     }
 }
