@@ -17,13 +17,13 @@ public class Main {
             for(int j = 0; j < n; j++) {
                 if(numbers[j] != numbers[i]) {
                     diff = Math.abs(numbers[j] - numbers[i]);
-                    
+
                     if(diff < min) {
                         min = diff;
                     }
                 }
             }
         }
-        System.out.print(diff);
+        System.out.print(min);
     }
 }
