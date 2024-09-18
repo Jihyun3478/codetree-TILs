@@ -20,11 +20,14 @@ public class Main {
                     if(profit > max) {
                         max = profit;
                     }
-                }            
+                }
+                else {
+                    max = 0;
+                }           
             }
         }
 
-        if(max == 0 || n == 1) {
+        if(max == 0) {
             System.out.print("0");
         } else {
             System.out.print(max);
