@@ -6,7 +6,7 @@ public class Main {
 
         int n = sc.nextInt();
         int[] price = new int[n];
-        int max = Integer.MIN_VALUE;
+        int max = 0;
 
         for(int i = 0; i < n; i++) {
             price[i] = sc.nextInt();
@@ -20,17 +20,9 @@ public class Main {
                     if(profit > max) {
                         max = profit;
                     }
-                }
-                else {
-                    max = 0;
-                }           
+                }       
             }
         }
-
-        if(max == 0) {
-            System.out.print("0");
-        } else {
-            System.out.print(max);
-        }
+        System.out.print(max);
     }
 }
