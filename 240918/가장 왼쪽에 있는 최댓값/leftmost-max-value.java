@@ -4,25 +4,31 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
-        int[] numbers = new int[1000];
-        int[] cnt = new int[1000+1];
+        int N = sc.nextInt();
+        int[] numbers = new int[N];
 
-        for(int i = 0; i < n; i++) {
+        for(int i = 0; i < N; i++) {
             numbers[i] = sc.nextInt();
-            cnt[numbers[i]]++;
         }
         
-        int max = -1;    
-        for(int i = 0; i < 1000+1; i++) {
-            if(cnt[i] == 1) {
-                if(i > max) {
-                    max = i;
+        while(numbers.length >= 1) {
+            int max = -1; 
+
+            for(int i = 0; i < numbers.length; i++) {
+                if(numbers[i] >= max) {
+                    max = numbers[i];
                 }
-            } else if(cnt[i] != 1) {
-                continue;
             }
+
+            int index = 0;
+            for(int i = 0; i < numbers.length; i++) {
+                if(numbers[i] == max) {
+                    index = i;
+                    break;
+                }
+            }
+            System.out.print(index+1 + " ");
+            numbers = Arrays.copyOfRange(numbers, 0, index);
         }
-        System.out.print(max);
     }
 }
