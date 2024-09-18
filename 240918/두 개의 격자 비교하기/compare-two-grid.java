@@ -22,7 +22,7 @@ public class Main {
         }
         
         for(int i = 0; i < n; i++) {
-            for(int j = 0; j < n; j++) {
+            for(int j = 0; j < m; j++) {
                 if(numbers1[i][j] == numbers2[i][j]) {
                     System.out.print("0 ");
                 } else {
