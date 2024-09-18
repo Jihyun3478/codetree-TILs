@@ -24,7 +24,7 @@ public class Main {
             }
         }
 
-        if(max == 0) {
+        if(max == 0 || n == 1) {
             System.out.print("0");
         } else {
             System.out.print(max);
