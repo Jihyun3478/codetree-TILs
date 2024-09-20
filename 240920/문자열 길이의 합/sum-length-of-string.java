@@ -14,8 +14,8 @@ public class Main {
             str += strArr[i];
         }
 
-        for(int i = 0; i < str.length(); i++) {
-            if(str.charAt(i) == 'a') {
+        for(int i = 0; i < n; i++) {
+            if(strArr[i].charAt(0) == 'a') {
                 cnt++;
             }
         }
