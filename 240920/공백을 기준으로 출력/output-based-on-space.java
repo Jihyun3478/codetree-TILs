@@ -4,10 +4,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String str = sc.nextLine();
-        str = str.replaceAll(" ", "");
-        str = str.replaceAll("\n", "");
+        String str1 = sc.nextLine();
+        String str2 = sc.nextLine();
+        str1 = str1.replaceAll(" ", "");
+        str2 = str2.replaceAll(" ", "");
 
-        System.out.print(str);
+        str1 += str2;
+
+        System.out.print(str1);
     }
 }
