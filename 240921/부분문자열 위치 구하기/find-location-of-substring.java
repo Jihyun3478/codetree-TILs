@@ -9,13 +9,16 @@ public class Main {
         int index = 0;
         boolean isInclude = false;
 
-        for(int i = 1; i < str1.length(); i++) {
-            String temp = String.valueOf(str1.charAt(i-1)) + String.valueOf(str1.charAt(i));
-            if(temp.equals(str2)) {
-                index = i-1;
-                isInclude = true;
+        if(str1.contains(str2)) {
+            for(int i = 0; i < str1.length(); i++) {
+                if(str1.charAt(i) == str2.charAt(0)) {
+                    index = i;
+                    isInclude = true;
+                    break;
+                }
             }
         }
+        
 
         if(isInclude == true) {
             System.out.print(index);
