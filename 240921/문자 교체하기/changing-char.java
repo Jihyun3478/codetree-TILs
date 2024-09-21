@@ -7,7 +7,7 @@ public class Main {
         String str1 = sc.next();
         String str2 = sc.next();
         
-        String answer = str1.substring(0, 2) + str1.substring(3, str2.length());
+        String answer = str1.substring(0, 2) + str2.substring(2, str2.length());
         System.out.print(answer);
     }
 }
