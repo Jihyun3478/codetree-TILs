@@ -22,9 +22,9 @@ public class Main {
         }
         
         if(str1 == str2) {
-            isInclude = true;
+            System.out.print("0");
         }
-        
+
         if(isInclude) {
             System.out.print(index);
         } else {
