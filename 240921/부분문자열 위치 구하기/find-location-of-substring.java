@@ -9,7 +9,7 @@ public class Main {
         int index = 0;
         boolean isInclude = false;
 
-        for(int i = 0; i <= str1.length(); i++) {
+        for(int i = 0; i < str1.length(); i++) {
             if(str1.charAt(i) == str2.charAt(0)) {
                 index = i;
                 isInclude = true;
