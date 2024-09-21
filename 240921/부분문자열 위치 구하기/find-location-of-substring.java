@@ -6,21 +6,23 @@ public class Main {
 
         String str1 = sc.next();
         String str2 = sc.next();
-        int index = 0;
-        boolean isInclude = false;
+        int index = -1;
 
-        for(int i = 0; i < str1.length(); i++) {
-            if(str1.charAt(i) == str2.charAt(0)) {
+        for(int i = 0; i <= str1.length() - str2.length(); i++) {
+            boolean isInclude = true;
+
+            for(int j = 0; j < str2.length(); j++) {
+                if(str1.charAt(i + j) != str2.charAt(j)) {
+                    isInclude = false;
+                    break;
+                }
+            }
+
+            if(isInclude) {
                 index = i;
-                isInclude = true;
                 break;
             }
         }
-
-        if(isInclude) {
-            System.out.print(index);
-        } else {
-            System.out.print("-1");
-        }
+        System.out.print(index);
     }
 }
