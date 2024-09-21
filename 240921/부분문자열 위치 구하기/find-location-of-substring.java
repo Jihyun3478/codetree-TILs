@@ -21,6 +21,10 @@ public class Main {
             }
         }
         
+        if(str1 == str2) {
+            isInclude = true;
+        }
+        
         if(isInclude) {
             System.out.print(index);
         } else {
