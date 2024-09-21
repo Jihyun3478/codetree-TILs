@@ -9,20 +9,12 @@ public class Main {
         int index = 0;
         boolean isInclude = false;
 
-        for(int i = 0; i < str1.length(); i++) {
+        for(int i = 0; i <= str1.length(); i++) {
             if(str1.charAt(i) == str2.charAt(0)) {
-                for(int j = 0; j < str2.length(); j++) {
-                    if(str2.charAt(j) == str1.charAt(i)) {
-                        index = i-1;
-                        isInclude = true;
-                        break;
-                    }
-                }
+                index = i;
+                isInclude = true;
+                break;
             }
-        }
-        
-        if(str1 == str2) {
-            System.out.print("0");
         }
 
         if(isInclude) {
