@@ -9,18 +9,19 @@ public class Main {
         int index = 0;
         boolean isInclude = false;
 
-        if(str1.contains(str2)) {
-            for(int i = 0; i < str1.length(); i++) {
-                if(str1.charAt(i) == str2.charAt(0)) {
-                    index = i;
-                    isInclude = true;
-                    break;
+        for(int i = 0; i < str1.length(); i++) {
+            if(str1.charAt(i) == str2.charAt(0)) {
+                for(int j = 0; j < str2.length(); j++) {
+                    if(str2.charAt(j) == str1.charAt(i)) {
+                        index = i-1;
+                        isInclude = true;
+                        break;
+                    }
                 }
             }
         }
         
-
-        if(isInclude == true) {
+        if(isInclude) {
             System.out.print(index);
         } else {
             System.out.print("-1");
