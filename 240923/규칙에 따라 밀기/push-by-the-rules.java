@@ -10,7 +10,7 @@ public class Main {
 
         for(int i = 0; i < order.length(); i++) {
             if(order.charAt(i) == 'L') {
-                s = s.substring(len-1, len) + s.substring(0, len-1);
+                s = s.substring(1, len) + s.substring(0, 1);
             } else if(order.charAt(i) == 'R') {
                 s = s.substring(len-1, len) + s.substring(0, len-1);
             }
