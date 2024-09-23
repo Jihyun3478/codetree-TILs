@@ -8,7 +8,7 @@ public class Main {
         int convertA = 0;
 
         if(a == 'z') {
-            convertA = 65;
+            convertA = 97;
         } else {
             convertA = (int)a+1;
         }
