@@ -11,16 +11,19 @@ public class Main {
         int answer = 0;
         if(o == '+') {
             answer = add(a, o, c);
+            System.out.print(a + " " + o + " " + c + " = " + answer);
         } else if(o == '-') {
             answer = sub(a, o, c);
+            System.out.print(a + " " + o + " " + c + " = " + answer);
         } else if(o == '/') {
             answer = div(a, o, c);
+            System.out.print(a + " " + o + " " + c + " = " + answer);
         } else if(o == '*') {
             answer = mul(a, o, c);
+            System.out.print(a + " " + o + " " + c + " = " + answer);
         } else {
             System.out.print("False");
         }
-        System.out.print(a + " " + o + " " + c + " = " + answer);
     }
 
     public static int add(int a, char o, int c) {
